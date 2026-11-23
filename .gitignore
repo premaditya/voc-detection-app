@@ -1,0 +1,4 @@
+object/
+test_videos/
+__pycache__/
+.ipynb_checkpoints/
