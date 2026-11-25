@@ -1,5 +1,6 @@
 
 import tempfile
+from pathlib import Path
 import subprocess
 import streamlit as st
 import numpy as np
@@ -13,7 +14,9 @@ st.set_page_config(
     layout= "wide"
 )
 
-with open("style.css", "r") as s:
+
+css_path = Path(__file__).parent / "style.css"
+with open( css_path, "r") as s:
     style = s.read()
 
 
