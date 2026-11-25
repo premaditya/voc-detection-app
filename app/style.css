@@ -1,0 +1,724 @@
+/* ===== App & sidebar backgrounds (only addition; skip if you use config.toml) ===== */
+.stApp {
+    background-color: #141210;
+}
+
+section[data-testid="stSidebar"] {
+    background-color: #1b1815;
+}
+
+/* Main Application Header */
+.header {
+    background-color: #1f1b17;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 25px;
+    transition: translate 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header:hover{
+    translate: -2px -1px;
+    box-shadow: 10px 10px 15px rgba(212, 168, 90, 0.15);
+}
+
+.header h1 {
+    color: #d4a85a;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Sidebar Heading */
+.sidebar-header h2 {
+    color: #d4a85a;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    text-align: center;
+}
+
+/* Sidebar Description */
+.sidebar-header p {
+    color: #b3a998;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Sidebar Metrics Container */
+.metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+/* Individual Metric Card */
+.metric {
+    background-color: #29241e;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 168, 90, 0.15);
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+
+}
+
+/* Metric Card Hover Effect */
+.metric:hover{
+    transform: translateY(-4px);
+    border-color: rgba(212, 168, 90, 0.6);
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35), 0 0 12px rgba(212, 168, 90, 0.08);
+}
+
+/* Metric Text */
+.metric h3{
+    color: #d4a85a;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+
+/* Classes Header */
+.classes-header {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(212, 168, 90, 0.2);
+}
+
+.classes-header h3 {
+    color: #ecd29a;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* PASCAL VOC Classes Container */
+.classes_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+
+    background-color: #1f1b17;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+
+    border: 1px solid rgba(212, 168, 90, 0.15);
+}
+
+/* Individual Class Tags */
+.class_name {
+    background-color: #29241e;
+    padding: 8px 14px;
+    border-radius: 8px;
+
+    border: 1px solid rgba(212, 168, 90, 0.2);
+
+    transition: transform 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Class Tag Hover */
+.class_name:hover {
+    background-color: #33291c;
+    border-color: #d4a85a;
+
+    box-shadow: 0 0 8px rgba(212, 168, 90, 0.25), inset 0 0 6px rgba(212, 168, 90, 0.08);
+    cursor: default;
+}
+
+/* Class Name Text */
+.class_name p {
+    color: #ece4d6;
+    font-size: 13px;
+    font-weight: 500;
+
+    margin: 0;
+    text-align: center;
+}
+
+/* CLass Name Hover */
+.class_name:hover p {
+    color: #d4a85a;
+}
+
+/* App guide section */
+.app-guide {
+    background-color: #1f1b17;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 168, 90, 0.2);
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+/* Guide Heading */
+.guide-header {
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(212, 168, 90, 0.2);
+}
+
+.guide-header h2 {
+    color: #d4a85a;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+}
+
+.guide-header p {
+    color: #b3a998;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Guide Cards */
+.guide-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.guide-card {
+    flex: 1 1 200px;
+    background-color: #29241e;
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(212, 168, 90, 0.15);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.guide-card:hover {
+    border-color: rgba(212, 168, 90, 0.5);
+    box-shadow: 0 0 12px rgba(212, 168, 90, 0.1);
+}
+
+.guide-card h3 {
+    color: #ecd29a;
+    font-size: 17px;
+    margin: 0 0 10px 0;
+}
+
+.guide-card p {
+    color: #b3a998;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Limitations Section */
+.guide-limitations {
+    background-color: #29241e;
+    padding: 18px;
+    border-radius: 10px;
+    border-left: 4px solid #d4a85a;
+}
+
+.guide-limitations h3 {
+    color: #c9814a;
+    font-size: 18px;
+    margin: 0 0 12px 0;
+}
+
+.guide-limitations ul {
+    color: #b3a998;
+    padding-left: 22px;
+    margin: 0;
+}
+
+.guide-limitations li {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 6px;
+}
+
+/* Mode Selection */
+.st-key-mode{
+    width: 100% !important;
+}
+
+/* Mode Selection Radio Container */
+.st-key-mode div[data-testid = "stRadio"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1f1b17;
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 168, 90, 0.15);
+    margin-bottom: 20px;
+    width: 100%;
+
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Radio Container Hover */
+div[data-testid = "stRadio"]:hover {
+    border-color: rgba(212, 168, 90, 0.5);
+    box-shadow: 0 0 12px rgba(212, 168, 90, 0.08);
+}
+
+/* Mode Selection Options */
+div[data-testid = "stRadioGroup"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Radio Widget Label */
+div[data-testid = "stRadio"] > label {
+    color: #d4a85a;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* Radio Option Text */
+div[data-testid = "stRadio"] label p {
+    color: #ece4d6;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.25s ease;
+}
+
+/* Radio Option Hover */
+div[data-testid = "stRadio"] label:hover p {
+    color: #d4a85a;
+}
+
+/* File Uploader */
+div[data-testid = "stFileUploader"] {
+    background-color: #1f1b17;
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* Upload Widget Label */
+div[data-testid = "stFileUploader"] label[data-testid = "stWidgetLabel"]{
+    color: #d4a85a;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Drag and Drop Area */
+section[data-testid = "stFileUploaderDropzone"] {
+    background-color: #29241e;
+    border-radius: 12px;
+    border: 2px dashed rgba(212, 168, 90, 0.4);
+
+    transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Drag and Drop Hover */
+section[data-testid = "stFileUploaderDropzone"]:hover {
+    background-color: #33291c;
+    border-color: #d4a85a;
+
+    box-shadow: 0 0 12px rgba(212, 168, 90, 0.1);
+}
+
+/* Upload Button */
+section[data-testid = "stFileUploaderDropzone"] button[data-testid = "stBaseButton-secondary"] {
+    background-color: #d4a85a;
+    color: #141210;
+
+    border: none;
+    border-radius: 8px;
+    padding: 6px 18px;
+
+    font-weight: 600;
+
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Upload Button Hover */
+section[data-testid = "stFileUploaderDropzone"] button[data-testid = "stBaseButton-secondary"]:hover{
+    background-color: #e2bc72;
+    color: #141210;
+
+    box-shadow: 0 0 10px rgba(212, 168, 90, 0.25);
+}
+
+/* Upload Button Icon */
+section[data-testid = "stFileUploaderDropzone"] [data-testid = "stIconMaterial"] {
+    color: #141210;
+}
+
+/* Upload Instructions */
+div[data-testid = "stFileUploaderDropzoneInstructions"] {
+    color: #8f8677;
+    font-size: 12px;
+}
+
+/* Accepted File Formats */
+div[data-testid = "stFileUploaderDropzoneInstructions"]span {
+    color: #8f8677;
+}
+
+/* Upload Image Preview Container */
+.st-key-upload-image [data-testid = "stImage"]{
+    background-color: #1f1b17;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 168, 90, 0.2);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Upload Image Preview Container */
+.st-key-upload-image [data-testid = "stImage"]:hover {
+    border-color: rgba(212, 168, 90, 0.6);
+    box-shadow: 0 0 14px rgba(212, 168, 90, 0.12);
+}
+
+/* Upload Video Container */
+.st-key-upload-video {
+    background-color: #1f1b17;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 168, 90, 0.2);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Upload video container hover */
+.st-key-upload-video:hover {
+    border-color: rgba(212, 168, 90, 0.6);
+    box-shadow: 0 0 14px rgba(212, 168, 90, 0.12);
+}
+
+/* Webcam Container */
+.st-key-webcam-photo [data-testid = "stCameraInput"] {
+    background-color: #1f1b17;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 168, 90, 0.2);
+
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Webcam Container hover */
+.st-key-webcam-photo [data-testid = "stCameraInput"]:hover {
+    border-color: rgba(212, 168, 90, 0.6);
+    box-shadow: 0 0 14px rgba(212, 168, 90, 0.12);
+}
+
+.st-key-webcam-photo [data-testid = "stWidgetLabel"] {
+    color: #d4a85a;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Camera preview */
+.st-key-webcam-photo video {
+    border-radius: 10px;
+    border: 1px solid rgba(212, 168, 90, 0.25);
+}
+
+/* Take Photo button */
+.st-key-webcam-photo [data-testid = "stCameraInputButton"] {
+    background-color: #d4a85a;
+    color: #141210;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Take a photo button hover */
+.st-key-webcam-photo [data-testid = "stCameraInputButton"]:hover {
+    background-color: #e2bc72;
+    box-shadow: 0 0 10px rgba(212, 168, 90, 0.25);
+}
+
+/* Detection image container */
+.st-key-detection-image {
+    background-color: #1f1b17;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 168, 90, 0.2);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Detection image hover */
+.st-key-detection-image:hover {
+    border-color: rgba(212, 168, 90, 0.6);
+    box-shadow: 0 0 14px rgba(212, 168, 90, 0.12);
+}
+
+/* Image Itself */
+.st-key-detection-image [data-testid = "stImage"] {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Processed video container */
+.st-key-processed-video {
+    background-color: #1f1b17;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 168, 90, 0.2);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Container hover effect */
+.st-key-processed-video:hover {
+    border-color: rgba(212, 168, 90, 0.6);
+    box-shadow: 0 0 14px rgba(212, 168, 90, 0.12);
+}
+
+/* Processed video player */
+.st-key-processed-video [data-testid = "stVideo"] {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Success message container */
+div[data-testid="stAlert"] {
+    background-color: #1f1b17;
+    border: 1px solid rgba(212, 168, 90, 0.3);
+    border-left: 4px solid #d4a85a;
+    border-radius: 10px;
+    padding: 14px 18px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+div[data-testid = "stAlertContainer"] {
+    background-color: #231f18;
+}
+
+/* Success message hover */
+div[data-testid="stAlert"]:hover {
+    border-color: rgba(212, 168, 90, 0.6);
+    box-shadow: 0 0 12px rgba(212, 168, 90, 0.12);
+}
+
+/* Success message content */
+div[data-testid="stAlertContentSuccess"] p {
+    color: #d4a85a;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Detection results section */
+.detection_results {
+    background-color: #1f1b17;
+    padding: 18px 22px;
+    border-radius: 12px;
+    border-left: 4px solid #d4a85a;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+/* Detection results heading */
+.detection_results h2 {
+    color: #d4a85a;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Detection summary card */
+.detection_summary {
+    background-color:  #29241e;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 168, 90, 0.2);
+    text-align: center;
+    margin: 20px 0;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.detection_summary:hover {
+    border-color: rgba(212, 168, 90, 0.6);
+    box-shadow: 0 0 14px rgba(212, 168, 90, 0.12);
+}
+
+/* Label */
+.detection_summary p {
+    color: #b3a998;
+    font-size: 15px;
+    margin: 0 0 8px 0;
+}
+
+/* Detection object count */
+.detection_summary h3 {
+    color: #d4a85a;
+    font-size: 32px;
+    font-size: 700;
+    margin: 0;
+}
+
+/* Detected classes section */
+.detected_objects {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(212, 168, 90, 0.2);
+}
+
+/* Detected classes heading */
+.detected_objects h3 {
+    color: #d4a85a;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Individual detection card */
+.detected_object {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    background-color: #29241e;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+
+    border: 1px solid rgba(212, 168, 90, 0.15);
+    border-radius: 10px;
+
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.detected_object:hover {
+    border-color: rgba(212, 168, 90, 0.5);
+    box-shadow: 0 0 12px rgba(212, 168, 90, 0.1);
+}
+
+/* Detected class name */
+.detected_class {
+    color: #d4a85a;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Confidence precentage */
+.detection_confidence {
+    color: #b3a998;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Image, Webcam and Video buttons */
+.st-key-image-process-button button,
+.st-key-webcam-process-button button,
+.st-key-video-process-button button {
+    background-color: #d4a85a;
+    color: #141210;
+
+    border: 1px solid #d4a85a;
+    border-radius: 10px;
+
+    padding: 10px 18px;
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: background-color 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Button hover */
+.st-key-image-process-button button:hover,
+.st-key-webcam-process-button button:hover,
+.st-key-video-process-button button:hover {
+    background-color: #e2bc72;
+    border-color: #e2bc72;
+    box-shadow: 0 0 14px rgba(212, 168, 90, 0.25);
+}
+
+/* Button click */
+.st-key-image-process-button button:active,
+.st-key-webcam-process-button button:active,
+.st-key-video-process-button button:active {
+    background-color: #b98f42;
+    border-color: #b98f42;
+}
+
+/* Keyboard focus */
+.st-key-image-process-button button:focus-visible,
+.st-key-webcam-process-button button:focus-visible,
+.st-key-video-process-button button:focus-visible {
+    outline: 2px solid #d4a85a;
+    outline-offset: 3px;
+}
+
+/* Button text */
+.st-key-image-process-button button p,
+.st-key-webcam-process-button button p,
+.st-key-video-process-button button p {
+    color: #141210;
+    font-weight: 600;
+}
+
+
+/* App footer */
+.app-footer {
+    background-color: #1f1b17;
+    padding: 22px;
+    margin-top: 35px;
+    border-top: 1px solid rgba(212, 168, 90, 0.3);
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Profile links */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #d4a85a;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ecd29a;
+    text-shadow: 0 0 10px rgba(212, 168, 90, 0.3);
+}
+
+/* Disclaimer */
+.footer-disclaimer {
+    max-width: 850px;
+    margin: 0 auto 15px auto;
+}
+
+.footer-disclaimer p {
+    color: #b3a998;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Footer credit */
+.footer-credit p {
+    color: #6b6458;
+    font-size: 12px;
+    margin: 0;
+}
